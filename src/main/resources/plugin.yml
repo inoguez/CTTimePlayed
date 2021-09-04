@@ -1,0 +1,34 @@
+name: CTTimePlayed
+version: '${project.version}'
+main: net.crafttorch.cttimeplayed.CTTimePlayed
+api-version: 1.13
+prefix: TimePlayed
+authors: [ 2GramsIn ]
+description: TimePlayed storage in a global db for all your servers
+softdepend: [PlaceholderAPI]
+commands:
+  setplayertime:
+    usage: /<command> <player> <time>
+    description: Sets the time played of a player
+    permission: timeplayed.setplayertime
+    permission-message: Don't have permission
+  getplayertime:
+    usage: /<command> <player>
+    description: Gets the time played of a player
+    permission: timeplayed.getplayertime
+    permission-message: Don't have permission
+  gettoptimelist:
+    usage: /<command>
+    description: returns a list of the top time player
+    permission: timeplayed.gettoptimelist
+    permission-message: Don't have permission
+permissions:
+  timeplayed.setplayertime:
+    description: set player time
+    default: op
+  timeplayed.getplayertime:
+    description: get player time
+    default: op
+  timeplayed.gettoptimelist:
+    description: get a top list of the players time
+    default: op

@@ -1,0 +1,11 @@
+DB:
+  host: "localhost"
+  port: "3306"
+  database: "timeplayed"
+  username: "root"
+  password: ""
+  table_name: "playtime"
+broadcast_prefix: "&f[&8C&cT&7-&3TimePlayed&f]"
+#Custom Font - Available from version 1.16 +, if you are running the plugin in a previous version please disable this feature
+custom_font: false
+message_color: "&5"
