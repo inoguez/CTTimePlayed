@@ -4,7 +4,6 @@ import net.crafttorch.cttimeplayed.commands.Command;
 import net.crafttorch.cttimeplayed.commands.Tab;
 import net.crafttorch.cttimeplayed.db.Database;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -31,6 +30,7 @@ public final class CTTimePlayed extends JavaPlugin {
         cVersion();
         db = new Database(this);
         SQLconnect();
+        new Metrics(this, 12856);
     }
 
     @Override
